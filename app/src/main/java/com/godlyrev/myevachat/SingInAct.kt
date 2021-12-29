@@ -41,13 +41,14 @@ class SingInAct : AppCompatActivity() {
             }
         }
         binding.bSignIn.setOnClickListener{
-
+            signInWithGoogle()
         }
+        checkAuthState()
     }
 
     private fun getClient(): GoogleSignInClient{
         val gso = GoogleSignInOptions
-            .Builder(GoogleSignInOptions.DEFAULT_GAMES_SIGN_IN)
+            .Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
             .requestIdToken(getString(R.string.default_web_client_id))
             .requestEmail()
             .build()
@@ -64,9 +65,17 @@ class SingInAct : AppCompatActivity() {
         auth.signInWithCredential(credential).addOnCompleteListener(){
             if(it.isSuccessful){
                 Log.d("MyLog", "Google SignIn done")
+                checkAuthState()
             }else{
                 Log.d("MyLog", "Google SignIn error")
             }
+        }
+    }
+
+    private fun checkAuthState(){
+        if(auth.currentUser != null){
+            val i = Intent(this, MainActivity::class.java)
+            startActivity(i)
         }
     }
 }
