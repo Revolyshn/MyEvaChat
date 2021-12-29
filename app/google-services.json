@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "660759592469",
+    "firebase_url": "https://myevachat-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "myevachat",
+    "storage_bucket": "myevachat.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660759592469:android:84faf1d0aea0cdf9e2981c",
+        "android_client_info": {
+          "package_name": "com.godlyrev.myevachat"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660759592469-rlm5bdcsrv6bkm78ltrb84sqnjcn232c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.godlyrev.myevachat",
+            "certificate_hash": "e2b2106339eb0994d2fa26d12fb628f67781b220"
+          }
+        },
+        {
+          "client_id": "660759592469-mnjp406sacoho6atfpm68maoorf0f9ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBy0ZpBB4Pe9_-laH_fn5m5VdB63L6OAMI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660759592469-mnjp406sacoho6atfpm68maoorf0f9ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
